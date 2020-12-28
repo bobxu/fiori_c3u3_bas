@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run c3u3-Chapter3Unit3",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/c3u3-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/comaxytChapter3Unit3/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/Chapter3Unit3",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/c3u3/Chapter3Unit3\"}"
+      },
+      "envFile": "${workspaceFolder}/Chapter3Unit3/.env1",
+      "preLaunchTask": "Build c3u3"
+    }
+  ]
+}
